@@ -1,0 +1,10 @@
+const player = require('play-sound')();
+
+function playNotificationSound() {
+    player.play('/Users/petermelo/Downloads/sound.mp3', (err) => {
+        if (err) console.error('Error playing sound:', err);
+    });
+}
+
+// Call the function to play the sound
+playNotificationSound();
